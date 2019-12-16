@@ -2071,7 +2071,7 @@ int fm_resizePattern(fmsynth* f, unsigned order, unsigned size, unsigned scaleCo
 {
 	if (order >= f->patternCount || size == 0)
 	{
-		return;
+		return 0;
 	}
 
 	int oldPatternSize = f->patternSize[order];

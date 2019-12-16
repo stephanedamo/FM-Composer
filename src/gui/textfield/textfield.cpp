@@ -1,5 +1,6 @@
 #include "textfield.hpp"
 #include "../contextmenu/contextmenu.hpp"
+#include <math.h>
 extern void *focusedElement;
 
 // very primitive text input, quite sucking atm

@@ -1,5 +1,6 @@
 #include "midi.h"
 #include <fstream>
+#include <math.h>
 
 #include "../views/settings/configEditor.hpp"
 #include "../libs/simpleini/SimpleIni.h"

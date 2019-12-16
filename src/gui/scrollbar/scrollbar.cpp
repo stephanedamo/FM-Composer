@@ -1,4 +1,5 @@
 #include "scrollbar.hpp"
+#include <math.h>
 
 
 Slider::Slider(float def, float _max, float _min, float _step, int _x, int _y, int _size, bool _mini, bool _horizontal) :

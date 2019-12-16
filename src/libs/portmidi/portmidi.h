@@ -3,7 +3,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
+
+#ifdef _WIN32
 	#define WIN32
+#endif
 
 /*
  * PortMidi Portable Real-Time MIDI Library

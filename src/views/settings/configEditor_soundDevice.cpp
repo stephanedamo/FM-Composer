@@ -1,4 +1,5 @@
 #include "configEditor.hpp"
+#include <math.h>
 
 
 #ifdef _WIN32
