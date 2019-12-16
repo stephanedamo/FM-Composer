@@ -1,5 +1,6 @@
 #include "drawBatcher.hpp"
 #include "../globalFunctions.hpp"
+#include <math.h>
 
 DrawBatcher drawBatcher;
 

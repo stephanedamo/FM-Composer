@@ -1,5 +1,6 @@
 #include "patternSelection.hpp"
 #include "../../gui/gui.hpp"
+#include <math.h>
 
 PatternSelection::PatternSelection() :
 bg(Vector2f(COL_WIDTH, ROW_HEIGHT)),

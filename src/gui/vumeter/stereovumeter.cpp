@@ -1,4 +1,5 @@
 #include "vumeter.hpp"
+#include <math.h>
 
 StereoVuMeter::StereoVuMeter(int x, int y) : vuLeft(x, y, "L"), vuRight(x + 60, y, "R")
 {

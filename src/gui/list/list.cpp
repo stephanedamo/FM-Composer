@@ -1,5 +1,6 @@
 #include "list.hpp"
 #include "../contextmenu/contextmenu.hpp"
+#include <math.h>
 extern void *focusedElement;
 
 

@@ -1,6 +1,7 @@
 #include "dataslider.hpp"
 #include "../contextmenu/contextmenu.hpp"
 #include "../popup/popup.hpp"
+#include <math.h>
 DataSlider* copiedSlider, pastedSlider;
 
 DataSlider::DataSlider(int _x, int _y, int _max, int _min, string _name, int def, int _width, int _number) : tvalue(int2str[def], font, charSize), width(_width), name(_name, font, charSize)

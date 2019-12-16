@@ -63,6 +63,20 @@ if(PORTAUDIO_FOUND)
 	target_link_libraries(${EXECUTABLE_NAME} ${PORTAUDIO_LIBRARIES})
 endif()
 
+# Detect and add Lame
+find_library(LAME_LIBRARY "mp3lame")
+find_path(LAME_INCLUDE_DIR "lame.h" PATH_SUFFIXES "lame")
+if(NOT LAME_LIBRARY)
+	message(STATUS "Cannot find mp3lame library")
+elseif(NOT LAME_INCLUDE_DIR)
+	message(STATUS "Cannot find mp3lame includes")
+else()
+	message(STATUS "Found mp3lame includes: ${LAME_INCLUDE_DIR}")
+	message(STATUS "Found mp3lame library: ${LAME_LIBRARY}")
+	include_directories(${LAME_INCLUDE_DIR})
+	target_link_libraries(${EXECUTABLE_NAME} ${LAME_LIBRARY})
+endif()
+
 # Link POSIX Thread library if necessary
 if(CMAKE_COMPILER_IS_GNUCC)
 	target_link_libraries(${EXECUTABLE_NAME} pthread)
